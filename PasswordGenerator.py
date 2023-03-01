@@ -46,24 +46,24 @@ numbers = input("Do you want numbers? Y/N: ")
 numbers = check(numbers)
 
 
-def passMaker(up, low, sym, num, numChar):
 
-    randNeeded = 0
-    inputter = [up, low, sym, num]
+randNeeded = 0
+inputter = [up, low, sym, num]
 
-    for i in range(4):
-        if inputter[i] == True:
-            randNeeded += 1
+for i in range(4):
+    if inputter[i] == True:
+        randNeeded += 1
+            
 
-    randNumbers = [0]*randNeeded
+randNumbers = [0]*randNeeded
 
 
     for i in range(numChar):
         randNumbers[randint(0,randNeeded-1)] +=1
 
-    return randNumbers
 
-randomNumbers = passMaker(upperCase, lowerCase, symbols, numbers, int(numberOfChar))
+upperCase, lowerCase, symbols, numbers, int(numberOfCha
+
 print(randomNumbers)
 if upperCase == True:
     for x in range(randomNumbers[0]):
@@ -75,7 +75,7 @@ if lowerCase == True:
 
 if symbols == True:
     for x in range(randomNumbers[2]):
-        password += chr(random.randint(33,152))
+        password += chr(random.randint(33,47))
 
 if numbers == True:
     for x in range(randomNumbers[3]):
