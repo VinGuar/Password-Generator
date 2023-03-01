@@ -15,13 +15,13 @@ while True:
     try:
         int(numberOfChar)
     except:
-        print("Please type an integer from 0-127 in number form. ", end="")
+        print("Please type an integer from 1-127 in number form. ", end="")
         continue
 
     if (int(numberOfChar)>=1 and int(numberOfChar)<=127):
         break
     else:
-        print("Please type a number from 0-127 in number form. ", end="")
+        print("Please type a number from 1-127 in number form. ", end="")
         
             
 
