@@ -11,7 +11,7 @@ while checker <= 127:
 
 
 while True:
-    numberOfChar = input("What length do you want the password (up to 127)? ")
+    numberOfChar = input("What length do you want your random password (up to 127)? ")
     try:
         int(numberOfChar)
     except:
