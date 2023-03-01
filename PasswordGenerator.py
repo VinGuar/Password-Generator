@@ -87,7 +87,7 @@ for i in range(int(numberOfChar)):
     randomNumbers[randint(0,randNeeded-1)] +=1
 
 char = string.punctuation
-print(randomNumbers)
+
 if upperCase in (0,1):
     for x in range(randomNumbers[upperCase]):
         password += chr(random.randint(65,90))
@@ -104,10 +104,10 @@ if numbers in (0,1,2,3):
     for x in range(randomNumbers[numbers]):
         password += chr(random.randint(48,57))
 
-print(password)
 passList = list(password)
 random.shuffle(passList)
 password = "".join(passList)
+print("")
 print("Your randomly generated password with " + numberOfChar + " digits is: " + password)
 
 
