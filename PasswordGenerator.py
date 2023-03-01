@@ -57,7 +57,6 @@ def passMaker(up, low, sym, num, numChar):
 
     randNumbers = [0]*randNeeded
 
-
     for i in range(numChar):
         randNumbers[randint(0,randNeeded-1)] +=1
 
